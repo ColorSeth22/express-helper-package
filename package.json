@@ -1,0 +1,30 @@
+{
+  "name": "express-helper-package",
+  "version": "1.0.0",
+  "description": "[![npm version](https://img.shields.io/npm/v/express-helper.svg)](https://www.npmjs.com/package/express-helper)\r [![npm downloads](https://img.shields.io/npm/dt/express-helper.svg)](https://www.npmjs.com/package/express-helper)\r [![license](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)",
+  "main": "index.js",
+  "bin": {
+    "express-helper": "bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ColorSeth22/express-helper-package.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ColorSeth22/express-helper-package/issues"
+  },
+  "homepage": "https://github.com/ColorSeth22/express-helper-package#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "morgan": "^1.10.1",
+    "commander": "^12.1.0",
+    "chalk": "^5.3.0",
+    "fs-extra": "^11.2.0"
+  }
+}
