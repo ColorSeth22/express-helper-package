@@ -2,7 +2,7 @@ import fs from "fs-extra";
 import path from "path";
 
 export const createServerFile = (name) => {
-  const fileContent = `import { createServer, createGetRoute } from "express-helper-package";
+  const fileContent = `import { createServer, createGetRoute } from "express-spark";
 
 const app = createServer({
   port: 3000,
@@ -20,7 +20,7 @@ createGetRoute({
 `;
   fs.writeFileSync(path.join(process.cwd(), `${name}.server.js`), fileContent);
 };export const createCRUDServerFile = (name) => {
-  const fileContent = `import { createServer, createCRUDRoute, asyncHandler } from "express-helper-package";
+  const fileContent = `import { createServer, createCRUDRoute, asyncHandler } from "express-spark";
 
 const app = createServer({
   port: 3000,
@@ -141,7 +141,7 @@ createCRUDRoute({
 });
 `;
   } else {
-    fileContent = `import { createServer, createGetRoute } from "./src/index.js";
+    fileContent = `import { createServer, createGetRoute } from "express-spark";
 
 const app = createServer({
   port: 3000,
